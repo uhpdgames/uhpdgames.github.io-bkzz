@@ -1,0 +1,425 @@
+{
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    109.2885367,
+                    12.3780423
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "12.3780423,109.2885367<br>free | op 2",
+                "name": "Bãi đá Ninh Vân\n"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    109.0174712,
+                    12.4955541
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "12.4955541,109.0174712",
+                "name": "hồ suối trầu\n"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    108.3564749,
+                    12.1611766
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "12.1611766,108.3564749",
+                "name": "Hồ Am Chúa\n"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    108.7186771,
+                    15.4186516
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "15.4186516,108.7186771",
+                "name": "Bãi biển Dung Quất\n"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    107.6951262,
+                    15.2624491
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "<img src=\"https://doc-0s-50-mymaps.googleusercontent.com/untrusted/hostedimage/of2ckk519v4ss515ba6u2qqdfg/a8gqigkbpj13lva16bm2u39jmo/1670921583500/tN9gJH6xLE3RVHDb-YI3n0lEFvNPmrk6/07002204256597925242/5AKgB-9lRs6u0tkE7vDV3kGajkDdfe-PhrK6oMI5p3nibYEfiPT_5pNUZlgNtSMwkPBgYl79_NRLFYQ_tUy5BlYqdtu2KrK_eT5jUwxYpsrcwXuF-aWsbD-fY7iigvgCYb29c4-EhGr3nVcmAfjtUV62_b-BGrCUZQ4Zz9DofPKHttYvyS3er29KBIz5XAfS_g-0_jg?session=0&fife\" height=\"200\" width=\"auto\" /><br><br>15.2624491,107.6951262",
+                "name": "Thảo Nguyên Bùi Hui Ba Tơ\n"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    107.3630018,
+                    10.938803
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "10.938803,107.3630018",
+                "name": "Núi Chứa Chan\n"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    106.8848775,
+                    21.408403
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "21.408403,106.8848775",
+                "name": "Cao nguyên Đồng Cao\n"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    107.5204719,
+                    21.5285822
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "21.5285822,107.5204719",
+                "name": "Đỉnh núi Cao Ly - Bình Liêu\n"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    105.3476776,
+                    19.5882158
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "19.5882158,105.3476776",
+                "name": "Hồ Sông Mực\n"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    107.0577895,
+                    17.0876472
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "17.0876472,107.0577895",
+                "name": "Biển Mũi Trèo \n"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    108.4171846,
+                    15.4687756
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "15.4687756,108.4171846",
+                "name": "Hồ Phú Ninh\n"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    107.8976644,
+                    11.8327001
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "11.8327001,107.8976644",
+                "name": "Vịnh Tà Đùng\n"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    107.5983428,
+                    16.4016918
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "pair",
+                "name": "Nhà Sơn Tranh"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    107.48088,
+                    16.5265471
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "pair",
+                "name": "Soleil Café & Camping"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    107.9050789,
+                    16.3676532
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "pair",
+                "name": "Ham Rong Beach"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    107.6189536,
+                    16.4306434
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "pair",
+                "name": "Narasa Hills - Edu farm, Coffee, BBQ, Camp"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    109.1697218,
+                    11.856393
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "pair",
+                "name": "Du Lịch Sinh Thái Sao Biển"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    109.3574069,
+                    12.825904
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "pair",
+                "name": "Dai Lanh Beach"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    109.2174053,
+                    12.3084313
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "free",
+                "name": "0. núi Cô Tiên | hiking | day 1"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    109.03551,
+                    12.1321475
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "free",
+                "name": "Suối đá Giăng"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    109.1570901,
+                    12.189009
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "free",
+                "name": "Hồ Kênh Hạ"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    109.25375,
+                    13.7598314
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "free",
+                "name": "Bãi Rạng"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    109.2131299,
+                    13.7336895
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Núi Xuân Vân",
+                "name": "Núi Xuân Vân"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    109.2075526,
+                    12.2940981
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "CHECKING HERE",
+                "name": "00.Angel Mountains | DAY 1"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    109.208255,
+                    12.2936036
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "000.Cô Bình - Gửi xe núi Cô Tiên",
+                "name": "000.Cô Bình - Gửi xe núi Cô Tiên"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    107.9050789,
+                    16.3676532
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Ham Rong Beach",
+                "name": "Ham Rong Beach"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    107.5369946,
+                    16.4378739
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Thuy Bieu Homestay",
+                "name": "Thuy Bieu Homestay"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    105.5188121,
+                    19.5422545
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Khu du lịch sinh thái Camping Xuân Thái",
+                "name": "Khu du lịch sinh thái Camping Xuân Thái"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    105.4026285,
+                    19.5335612
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Điểm Camping Hồ Khe Hương Bên Rừng Cao Su Rất Đẹp",
+                "name": "Điểm Camping Hồ Khe Hương Bên Rừng Cao Su Rất Đẹp"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    105.4938911,
+                    19.4659707
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Đường 513",
+                "name": "Đường 513"
+            },
+            "type": "Feature"
+        }
+    ],
+    "type": "FeatureCollection"
+}

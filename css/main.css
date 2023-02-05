@@ -1,0 +1,683 @@
+
+.navigation {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: .25em;
+    margin-bottom: 3em;
+
+}
+
+.navigation::before {
+    
+}
+
+.navigation ul {
+    position: relative;
+    display: flex;
+    width: auto;
+    height: 25.66666666666667em;
+    padding: .25em;
+    margin: 0 auto;
+    flex-direction: column-reverse;
+}
+.navigation ul::before{
+    content: " ";
+    position:absolute;
+    top:0;
+    left: 0;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    width: 100%;
+    height: 100%;
+    opacity: .45;
+    border-radius: 30px;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 2em;
+    z-index: 1;
+    padding: .25rem;
+    margin: 0;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    font-size: .5em;
+    line-height: 3em;
+    transition: .5s;
+    color: #000;
+}
+
+.navigation ul li.active .icon {
+    color: red;
+    transform: translateY(-10px);
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li a .text {
+    opacity: 0;
+    position: absolute;
+    font-weight: 400;
+    font-size: .5em;
+    color: #666666;
+    transition: .5s;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    transform: translateY(0px);
+}
+
+.navigation ul li.active a .text {
+
+    opacity: 1;
+    font-weight: 600;
+    font-size: .75em;
+    color: red;
+    border-radius: 10px;
+    border: 2px solid red;
+    padding: 2px;
+}
+
+.navigation ul li.active a .icon {
+
+    animation: animate 1s linear infinite;
+}
+
+.animate_b{
+    animation: animate 0.25s linear infinite;
+}
+
+.navigation .text {
+    display: none;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1.25);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.25);
+    }
+}
+
+
+.indicator {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    transition: .5s;
+}
+
+
+.indicator::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    height: 18px;
+    width: 80%;
+    background: red;
+    border-radius: 10px;
+}
+
+#info, .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    color: blue;
+    font-family: cursive;
+    font-size: large;
+    font-weight: 500;
+    line-height: 2;
+    margin-right: 20px;
+    border: 1px solid mediumvioletred;
+    padding: 5px;
+    background-color: cornsilk;
+    margin-top: 10px;
+    opacity: .75;
+}
+
+.overlay {
+    margin: 0;
+    padding: 0;
+    border: none;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 1;
+    background: transparent;
+    pointer-events: none;
+
+}
+
+.menu {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    z-index: 99999999;
+}
+
+.routing-off {
+    background: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cpath fill="currentColor" d="m336.76 161l-186.53 82.35c-10.47 4.8-6.95 20.67 4.57 20.67H244a4 4 0 0 1 4 4v89.18c0 11.52 16 15 20.78 4.56L351 175.24A10.73 10.73 0 0 0 336.76 161Z"%2F%3E%3Cpath fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192Z"%2F%3E%3C%2Fsvg%3E');
+}
+
+.routing-on {
+    background: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cg transform="rotate(90 256 256)"%3E%3Cpath fill="blue" d="m336.76 161l-186.53 82.35c-10.47 4.8-6.95 20.67 4.57 20.67H244a4 4 0 0 1 4 4v89.18c0 11.52 16 15 20.78 4.56L351 175.24A10.73 10.73 0 0 0 336.76 161Z"%2F%3E%3Cpath fill="none" stroke="blue" stroke-miterlimit="10" stroke-width="32" d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192Z"%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.zoom-off {
+    background: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="m15 3l2.3 2.3l-2.89 2.87l1.42 1.42L18.7 6.7L21 9V3h-6zM3 9l2.3-2.3l2.87 2.89l1.42-1.42L6.7 5.3L9 3H3v6zm6 12l-2.3-2.3l2.89-2.87l-1.42-1.42L5.3 17.3L3 15v6h6zm12-6l-2.3 2.3l-2.87-2.89l-1.42 1.42l2.89 2.87L15 21h6v-6z"%2F%3E%3C%2Fsvg%3E');
+}
+
+.zoom-in {
+    background: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="blue" d="M9 9V3H7v2.59L3.91 2.5L2.5 3.91L5.59 7H3v2h6zm12 0V7h-2.59l3.09-3.09l-1.41-1.41L17 5.59V3h-2v6h6zM3 15v2h2.59L2.5 20.09l1.41 1.41L7 18.41V21h2v-6H3zm12 0v6h2v-2.59l3.09 3.09l1.41-1.41L18.41 17H21v-2h-6z"%2F%3E%3C%2Fsvg%3E');
+}
+
+.meter-off {
+    opacity: .5;
+    background: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cpath fill="currentColor" d="m326.1 231.9l-47.5 75.5a31 31 0 0 1-7 7a30.11 30.11 0 0 1-35-49l75.5-47.5a10.23 10.23 0 0 1 11.7 0a10.06 10.06 0 0 1 2.3 14Z"%2F%3E%3Cpath fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 64C132.3 64 32 164.2 32 287.9a223.18 223.18 0 0 0 56.3 148.5c1.1 1.2 2.1 2.4 3.2 3.5a25.19 25.19 0 0 0 37.1-.1a173.13 173.13 0 0 1 254.8 0a25.19 25.19 0 0 0 37.1.1l3.2-3.5A223.18 223.18 0 0 0 480 287.9C480 164.2 379.7 64 256 64Z"%2F%3E%3Cpath fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M256 128v32m160 128h-32m-256 0H96m69.49-90.51l-22.63-22.63m203.65 22.63l22.63-22.63"%2F%3E%3C%2Fsvg%3E');
+}
+
+.meter-on {
+    opacity: .5;
+    background: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cg transform="rotate(180 256 256)"%3E%3Cpath fill="blue" d="m326.1 231.9l-47.5 75.5a31 31 0 0 1-7 7a30.11 30.11 0 0 1-35-49l75.5-47.5a10.23 10.23 0 0 1 11.7 0a10.06 10.06 0 0 1 2.3 14Z"%2F%3E%3Cpath fill="none" stroke="blue" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 64C132.3 64 32 164.2 32 287.9a223.18 223.18 0 0 0 56.3 148.5c1.1 1.2 2.1 2.4 3.2 3.5a25.19 25.19 0 0 0 37.1-.1a173.13 173.13 0 0 1 254.8 0a25.19 25.19 0 0 0 37.1.1l3.2-3.5A223.18 223.18 0 0 0 480 287.9C480 164.2 379.7 64 256 64Z"%2F%3E%3Cpath fill="none" stroke="blue" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M256 128v32m160 128h-32m-256 0H96m69.49-90.51l-22.63-22.63m203.65 22.63l22.63-22.63"%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.planet-off {
+    background: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cpath fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M413.48 284.46c58.87 47.24 91.61 89 80.31 108.55c-17.85 30.85-138.78-5.48-270.1-81.15S.37 149.84 18.21 119c11.16-19.28 62.58-12.32 131.64 14.09"%2F%3E%3Ccircle cx="256" cy="256" r="160" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"%2F%3E%3C%2Fsvg%3E');
+}
+
+.planet-on {
+    background: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cg transform="rotate(180 256 256)"%3E%3Cpath fill="none" stroke="blue" stroke-miterlimit="10" stroke-width="32" d="M413.48 284.46c58.87 47.24 91.61 89 80.31 108.55c-17.85 30.85-138.78-5.48-270.1-81.15S.37 149.84 18.21 119c11.16-19.28 62.58-12.32 131.64 14.09"%2F%3E%3Ccircle cx="256" cy="256" r="160" fill="none" stroke="blue" stroke-miterlimit="10" stroke-width="32"%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.mapdefalut-on {
+    background: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"%3E%3Cg transform="rotate(180 18 18)"%3E%3Cdefs%3E%3Cpath id="clarityMapOutlineAlerted0" fill="none" d="M0 0h36v36H0z"%2F%3E%3C%2Fdefs%3E%3Cpath fill="blue" d="M22.08 15.06h1.6v3.81h-1.6zm0 6h1.6v3.81h-1.6zm-10-10h1.6v3.81h-1.6zm0 6.07h1.6v3.75h-1.6z"%2F%3E%3Cpath fill="blue" d="M33.68 15.4H32v11.35l-8.32 2.6v-2.29h-1.6v2l-8.4-4.31v-1.69h-1.6v1.72L4 28.11V9.79l8.08-3.33v2.35h1.6V6.47l5.67 2.9l1-1.76l-6.9-3.5a1 1 0 0 0-.84 0L2.62 8.2a1 1 0 0 0-.62.93v20.48a1 1 0 0 0 1.38.92l9.62-4l9.59 4.92a1 1 0 0 0 .46.11a.76.76 0 0 0 .3 0l10-3.12a1 1 0 0 0 .7-1V15.38Z"%2F%3E%3Cpath fill="blue" d="m26.85 1.14l-5.72 9.91a1.27 1.27 0 0 0 1.1 1.95h11.45a1.27 1.27 0 0 0 1.1-1.91l-5.72-9.95a1.28 1.28 0 0 0-2.21 0Z" class="clr-i-alert"%2F%3E%3Cuse href="%23clarityMapOutlineAlerted0"%2F%3E%3Cuse href="%23clarityMapOutlineAlerted0"%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.mapdefalut-off {
+    background: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"%3E%3Cdefs%3E%3Cpath id="clarityMapOutlineAlerted0" fill="none" d="M0 0h36v36H0z"%2F%3E%3C%2Fdefs%3E%3Cpath fill="currentColor" d="M22.08 15.06h1.6v3.81h-1.6zm0 6h1.6v3.81h-1.6zm-10-10h1.6v3.81h-1.6zm0 6.07h1.6v3.75h-1.6z"%2F%3E%3Cpath fill="currentColor" d="M33.68 15.4H32v11.35l-8.32 2.6v-2.29h-1.6v2l-8.4-4.31v-1.69h-1.6v1.72L4 28.11V9.79l8.08-3.33v2.35h1.6V6.47l5.67 2.9l1-1.76l-6.9-3.5a1 1 0 0 0-.84 0L2.62 8.2a1 1 0 0 0-.62.93v20.48a1 1 0 0 0 1.38.92l9.62-4l9.59 4.92a1 1 0 0 0 .46.11a.76.76 0 0 0 .3 0l10-3.12a1 1 0 0 0 .7-1V15.38Z"%2F%3E%3Cpath fill="currentColor" d="m26.85 1.14l-5.72 9.91a1.27 1.27 0 0 0 1.1 1.95h11.45a1.27 1.27 0 0 0 1.1-1.91l-5.72-9.95a1.28 1.28 0 0 0-2.21 0Z" class="clr-i-alert"%2F%3E%3Cuse href="%23clarityMapOutlineAlerted0"%2F%3E%3Cuse href="%23clarityMapOutlineAlerted0"%2F%3E%3C%2Fsvg%3E');
+}
+
+ion-icon {
+    transform: scale(.85);
+    display: block;
+    background-size: contain !important;
+    height: 3em;
+    width: 3em;
+    background-repeat: no-repeat;
+
+}
+
+.navigation ul li.active ion-icon {
+    transform: scale(1);
+}
+
+.leaflet-control.coordinate {
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.hud.hud-text {
+    z-index: 999;
+    border: 1px solid #FF9A8B;
+    height: 2em;
+    width: 100vw;
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    color: azure;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 0;
+    line-height: 1;
+    margin: 0 0 .22em;
+    top: 0;
+}
+
+
+.hud-text_content {
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%); /* Animation start out of the screen */
+}
+
+.hud-text.f-hud{
+    background: blanchedalmond;
+    color: tomato;
+    position: fixed;
+    bottom: .125em;
+    left: 0;
+    width: 100vw;
+    height: 2.5em;
+
+    z-index: 999999;
+    user-select: none;
+    pointer-events: none;
+}
+
+.text-running {
+    animation: move 50s linear infinite /* infinite make reapeat the animation indefinitely */;
+}
+
+.hud-weather.hud-text_content {
+    transform: translateX(0);
+}
+
+.hud-weather .hud-text_content div {
+    height: 2em;
+}
+
+.hud-text_content div {
+    align-items: center;
+    display: inline-flex;
+    margin: auto 0;
+    padding: 0;
+}
+
+/* Create the animation */
+@keyframes move {
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.fa-motorcycle:before {
+    content: "🏍️";
+    color: #222222;
+    font-size: 3em;
+}
+
+.blue {
+    color: blue !important;
+}
+
+.red {
+    color: red !important;
+}
+
+.leaflet-bar-part {
+    margin: 0 !important;
+}
+
+.leaflet-control-locate a {
+    width: 1em;
+    height: 1em;
+    background-repeat: no-repeat;
+}
+
+.leaflet-bar {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+    border-radius: 5px;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+main {
+    height: auto;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    z-index: 9999;
+    left: 0;
+    display: block;
+
+}
+
+.hud {
+    position: absolute;
+    /* top:0;
+    left: 25%; */
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+}
+
+.hud-weather .dis {
+    display: block;
+    margin-left: 5%;
+}
+
+.hud-weather {
+    display: flex;
+    background: transparent;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 2em;
+    color: snow;
+    margin-top: .25em;
+    font-size: .7em;
+    top: 0;
+    position: fixed;
+    left: 0;
+}
+
+.hud-weather::before {
+    content: " ";
+    background: #000;
+    opacity: .2;
+    width: 100%;
+    height: 3.33333em;
+
+    position: absolute;
+}
+
+.log#log-weather {
+    display: inline;
+    color: snow;
+    display: inline;
+    width: 100%;
+    text-align: left;
+    margin-left: .2em;
+    position: absolute;
+    top: 4em;
+    background: blue;
+    width: fit-content;
+    height: fit-content;
+    user-select: none;
+    pointer-events: none;
+}
+
+.log#log-address {
+    display: inline-block;
+
+    text-align: left;
+    margin-left: .2em;
+    position: relative;
+    user-select: none;
+    pointer-events: none;
+
+      display: block;
+      color: snow;
+      width: fit-content;
+      text-align: left;
+      margin-left: .2em;
+      position: absolute;
+      
+      top: 3rem;
+      background: blue;
+      height: fit-content;
+  
+      
+      word-break: break-word;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+}
+.log#log-address::before{
+    background-color: #666666;
+    opacity: .25;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+
+.ldBarEnable {
+    display: block;
+}
+.hud.comp{
+    display: none;
+    left: 5px;
+    top: 145px;
+    width: fit-content;
+    height: fit-content;
+    background: transparent;
+  
+}
+.hud.hud.comp .bg{
+    opacity: .7;
+}
+.hud.comp #n-sign{
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    transform: rotate(0deg);
+}
+
+#canvas {
+    transform: translateX(20%);
+    user-select: none;
+    pointer-events: none;
+    height: 20em;
+    opacity: .75;
+    bottom: 3em;
+    position: fixed;
+    left: 0;
+    z-index: 0;
+    /* display: none !important; */
+}
+
+.ldBar {
+    position: relative;
+}
+
+.ldBar.label-center > .ldBar-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 3px #fff;
+}
+
+.ldBar-label:after {
+    content: "%";
+    display: inline;
+}
+
+.ldBar.no-percent .ldBar-label:after {
+    content: "";
+}
+
+#preloader {
+
+    background: #000 url('https://uhpdgames.github.io/ixdbiker/images/loader.gif') no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 99999999;
+    background-size: 100%;
+
+}
+
+#log {
+    display: none !important;
+    background: aliceblue;
+    color: blue;
+    padding: 0 10px;
+    top: 6rem;
+    position: fixed;
+    left: 0;
+    user-select: none;
+    pointer-events: none;
+}
+
+.leaflet-map-pane svg {
+    font-size: 2em;
+}
+
+.ldMeter .ldBar-label:after {
+    content: "kmh";
+    font-size: 0.6em;
+}
+
+.temperatureBar .ldBar-label:after {
+    content: "°C";
+    font-size: 0.6em;
+}
+
+.windspeedBar .ldBar-label:after {
+    content: "W";
+    font-size: .6em;
+}
+
+
+.blinking {
+    animation: fade .125s infinite alternate !important;
+}
+
+.blinking::after {
+    content: "ƯNG HOÀNG PHI ĐĂNG";
+    font-size: 1em;
+    color: #ee0000;
+
+    position: absolute;
+    top: -10px;
+    left: 0;
+
+    font-family: monospace;
+    font-weight: 800;
+    width: max-content;
+
+}
+
+.blinking svg {
+    display: none;
+}
+
+.blinking::before {
+    content: "🏍️" !important;
+    color: #222222;
+    font-size: 3em;
+}
+
+.leaflet-marker-draggable {
+    animation: fade 2s infinite alternate;
+}
+
+.leaflet-interactive {
+    animation: fade 1.5s infinite alternate;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+}
+
+.leaflet-top {
+    top: 5em;
+}
+
+ 
+
+.hud.plus_codes{
+    left: 0;
+    top:0;
+    width: fit-content;
+    height: fit-content;
+}
+
+.hud.plus_codes.no-action{
+    user-select: none;
+    pointer-events: none;
+}
+
+.hud.hud.plus_codes #if_plus_codes{
+    width: 100vw;
+    height: 18vh;
+    opacity: 1;
+}
+
+.hud.plus_codes #if_plus_codes.full{
+    width: 100vw !important;
+    height: 95vh !important;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+}
+
+.hud.plus_codes.landscape{
+    bottom: 2rem;
+    right: 0;
+    left: unset;
+    top:unset;
+}
+.hud.plus_codes.landscape #if_plus_codes{
+    width: 40vw;
+    height: 50vh;
+
+}
+
+#ui-menu.landscape{
+
+    flex-direction: row-reverse;
+    width: fit-content;
+    height: fit-content;
+}
+#footer.landscape{
+    bottom: unset;
+    top:3rem;
+
+}
+
+.leaflet-top.leaflet-left.landscape{
+left: 0;
+right: unset;
+top:6rem;
+opacity: .5;
+
+}
+
+.hud.plus_codes.no-action #search-container-outer,
+.hud.plus_codes.no-action #summary-container-outer,
+.hud.plus_codes.no-action  #map-controls
+{
+    display: none !important;
+}
+
+#preloader.landscape{
+    background-size: 62% !important;
+}
