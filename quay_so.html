@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+	<title>TEST</title>
+</head>
+<html>
+<body>
+<main>
+	 
+	 
+		<div id="slot" ></div>
+	 
+	<section onclick="doSlot()">QUAY SO THU</section>
+</main>
+ 
+
+<script>
+var doing = false;
+
+
+
+var items = 
+[
+
+'ewewe1234r324324ccxcc',
+'ewewewewr3243244ewe23',
+'123423w434324324REWRT',
+'4wewqewqeq324324RWM29',
+'qwerqwwrer324324KMPOW',
+'rewrwe3244324324NMT33',
+];
+
+function doSlot(){
+	if (doing){return null;}
+	doing = true;
+
+
+	const maxLen = 7;
+
+	var numChanges = randomInt(1,4)*maxLen
+	var numeberslot = numChanges+randomInt(1,maxLen)
+
+
+	var i1 = 0;
+	var i2 = 0;
+	var i3 = 0;
+	var sound = 0
+	status.innerHTML = "SPINNING"
+	slot = setInterval(spin1, 50);
+
+	function spin1(){
+		i1++;
+		if (i1>=numeberslot){
+			 
+			//dunglai();
+		}
+		slotTile = document.getElementById("slot");
+	 
+		slotTile.innerHTML = items[randomInt(0, items.length - 1)];
+	}
+	
+
+}
+
+function dunglai(){
+		    //clearInterval(slot);
+			//return null;
+}
+  
+function randomInt(min, max){
+	return Math.floor((Math.random() * (max-min+1)) + min);
+}
+</script>
+</body>
+</html>
