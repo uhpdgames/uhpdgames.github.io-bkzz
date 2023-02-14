@@ -35,18 +35,15 @@ function doSlot(){
 	if (doing){return null;}
 	doing = true;
 
-
-	const maxLen = 7;
+	const maxLen = items.length;
 
 	var numChanges = randomInt(1,4)*maxLen
 	var numeberslot = numChanges+randomInt(1,maxLen)
 
 
 	var i1 = 0;
-	var i2 = 0;
-	var i3 = 0;
-	var sound = 0
-	status.innerHTML = "SPINNING"
+	 
+  
 	slot = setInterval(spin1, 50);
 
 	function spin1(){
