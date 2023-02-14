@@ -9,7 +9,9 @@
 	 
 		<div id="slot" ></div>
 	 
-	<section onclick="doSlot()" style="margin-top: 2rem;margin-left: 2rem;">QUAY SO</section>
+	<section onclick="doSlot()" style="margin-top: 2rem;margin-left: 2rem;">QUAY SỐ</section>
+
+	<section onclick="doStop()" style="margin-top: 2rem;margin-left: 2rem;">DỪNG LẠI</section>
 </main>
  
 
@@ -61,9 +63,9 @@ function doSlot(){
 
 }
 
-function dunglai(){
-		    //clearInterval(slot);
-			//return null;
+function doStop(){
+		    clearInterval(slot);
+			return null;
 }
   
 function randomInt(min, max){
