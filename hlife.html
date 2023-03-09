@@ -21,7 +21,7 @@
     }
 
     const idVideo =
-        ["w34p7qD7RUo", "5SipNUTpBLo", "fkK1HdYXDkQ", "nT7RZ7BhSog", "p7HMeyOr23A", "lFrqbuH4VmQ", "NYp5stNxY94", "PdlfUChdkek", "vXCtcD0oNcU", "pYI1hucwY_k", "4wNorEUH3Yo", "cbEAKprPMCA", "ILzA_Jtwp3Y", "dBUP1zCqjN8", "KSuDh2Tljdw", "HRkNb56dpSY", "tNCC7l7s7yk", "iyyjbGoozzI", "KTZDysDndKo", "0yH7P8HiP3U", "W4jUhMk23BU", "OhdEPBckQ4I", "WPp9vzCHCag", "Nohre8z5Dfc", "cdWlWBKHXXo", "fmVYglvqG8U", "2UiEBaIchE4", "7JwZYjHYRBc", "XH7Dhe9YI9Y", "K7ljdzVknz4", "a5PWUeAaShA", "U8otp3byhfo"];
+        ["w34p7qD7RUo", "5SipNUTpBLo", "fkK1HdYXDkQ", "nT7RZ7BhSog", "p7HMeyOr23A", "lFrqbuH4VmQ", "NYp5stNxY94", "PdlfUChdkek", "vXCtcD0oNcU", "pYI1hucwY_k", "4wNorEUH3Yo", "cbEAKprPMCA", "ILzA_Jtwp3Y", "dBUP1zCqjN8", "KSuDh2Tljdw", "HRkNb56dpSY", "tNCC7l7s7yk", "iyyjbGoozzI", "KTZDysDndKo"];
 
     const urlYTB = `https://www.youtube.com/watch?v=${idVideo[randomNumber(0, 31)]}`;
 
@@ -34,11 +34,21 @@
     var player;
 
     function onYouTubeIframeAPIReady() {
+        settup()
+    }
+
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+
+    var done = false;
+
+    function settup(){
         console.log('~start~')
         player = new YT.Player('menu', {
             height: '390',
             width: '640',
-            videoId: idVideo[randomNumber(0, 31)],
+            videoId: idVideo[randomNumber(0, idVideo.length - 1)],
             playerVars: {
                 'cc_load_policy':1,
                 'color':'white',
@@ -56,12 +66,6 @@
         });
     }
 
-    function onPlayerReady(event) {
-        event.target.playVideo();
-    }
-
-    var done = false;
-
     function onPlayerStateChange(event) {
         //YT.PlayerState.ENDED
         //YT.PlayerState.PLAYING
@@ -70,13 +74,13 @@
         setTimeout(keepPlay, randomNumber(10000, 25000));
 
         if (event.data == YT.PlayerState.PLAYING && !done) {
-            setTimeout(onYouTubeIframeAPIReady, randomNumber(900000, 1200000));
+            setTimeout(settup, randomNumber(900000, 1200000));
             done = true;
             
         }
 
         if(YT.PlayerState.ENDED == event.data){
-            setTimeout(onYouTubeIframeAPIReady, randomNumber(5000, 120000));
+            setTimeout(settup, randomNumber(5000, 120000));
             done = false;
         }
     }
